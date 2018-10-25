@@ -3,23 +3,18 @@ var expect = chai.expect
 
 var Coolculator = require('../lib/coolculator')
 
-describe('Coolculator', function () {
-  mm = new Coolculator()
+describe('Coolculator', function () {   //Subheading for test is 'Coolculator'
+  var mm = new Coolculator()    //creating a new instance of the Coolculator object
 
-  it('should add', function () {
-    result = mm.add(2, 3)
-    expect(result).to.equal(5)
+  it('should add', function () {         //test description
+    expect(mm.add(2, 3)).to.equal(5)
   })
 
-  // Uncomment this 👇
-  // it('should multiply', function() {
-  //   result = mm.multiply(2, 3)
-  //   expect(result).to.equal(6)
-  // })
+  it('should multiply', function () {    //test description
+    expect(mm.multiply(2, 3)).to.equal(6)
+  })
 
-  // Uncomment this 👇
-  // it('should subtract', function() {
-  //   result = mm.subtract(3, 2)
-  //   expect(result).to.equal(1)
-  // })
+  it('should subtract', function () {    //test description
+    expect(mm.subtract(3, 2)).to.equal(1)
+  })
 })
