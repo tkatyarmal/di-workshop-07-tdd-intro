@@ -3,10 +3,10 @@ var expect = chai.expect
 
 var Coolculator = require('../lib/coolculator')
 
-describe('Coolculator', function() {
+describe('Coolculator', function () {
   mm = new Coolculator()
 
-  it('should add', function() {
+  it('should add', function () {
     result = mm.add(2, 3)
     expect(result).to.equal(5)
   })
